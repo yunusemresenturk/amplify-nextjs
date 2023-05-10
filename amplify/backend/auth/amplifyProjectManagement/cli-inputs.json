@@ -1,0 +1,102 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "projectManagementIdentityPool",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "ampliffbfaa8b6",
+    "userPoolName": "projectManagementUserPool",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "(Your verification code)",
+    "emailVerificationMessage": "(Your verification code is {####})",
+    "defaultPasswordPolicy": true,
+    "passwordPolicyMinLength": "8",
+    "passwordPolicyCharacters": [
+      "Requires Lowercase",
+      "Requires Uppercase",
+      "Requires Numbers"
+    ],
+    "requiredAttributes": [
+      "email",
+      "name"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": "30",
+    "userpoolClientWriteAttributes": [
+      "address",
+      "birthdate",
+      "family_name",
+      "middle_name",
+      "gender",
+      "locale",
+      "given_name",
+      "phone_number",
+      "picture",
+      "profile",
+      "updated_at",
+      "email",
+      "name"
+    ],
+    "userpoolClientReadAttributes": [
+      "address",
+      "birthdate",
+      "email",
+      "family_name",
+      "middle_name",
+      "gender",
+      "locale",
+      "given_name",
+      "name",
+      "phone_number",
+      "picture",
+      "profile",
+      "updated_at",
+      "email_verified",
+      "phone_number_verified"
+    ],
+    "userpoolClientLambdaRole": "ampliffbfaa8b6_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": true,
+    "sharedId": "fbfaa8b6",
+    "resourceName": "amplifyProjectManagement",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "manual",
+    "thirdPartyAuth": false,
+    "usernameAttributes": [
+      "email"
+    ],
+    "userPoolGroups": true,
+    "adminQueries": true,
+    "triggers": {
+      "CreateAuthChallenge": [
+        "captcha-create-challenge"
+      ],
+      "CustomMessage": [
+        "verification-link"
+      ],
+      "PostConfirmation": [
+        "add-to-group"
+      ],
+      "PreTokenGeneration": [
+        "alter-claims"
+      ]
+    },
+    "hostedUI": false,
+    "userPoolGroupList": [
+      "user",
+      "admin"
+    ],
+    "adminQueryGroup": "admin",
+    "serviceName": "Cognito",
+    "verificationBucketName": "amplifyprojectmanagementverificationbucket",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
+}

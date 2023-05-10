@@ -6,15 +6,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm install && npm run build && cd aws && npm install && npm run cdk-synth && npm run cdk-deploy"
   },
   "dependencies": {
-    "@types/node": "20.1.1",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
-    "next": "13.4.1",
+    "@aws-sdk/client-dynamodb": "^3.327.0",
+    "@fullcalendar/core": "^6.1.6",
+    "aws-amplify": "^5.2.0",
+    "next": "latest",
+    "next-auth": "^4.22.1",
+    "primeflex": "3.3.0",
+    "primeicons": "^6.0.1",
+    "primereact": "9.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "react-transition-group": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/babel__core": "^7.20.0",
+    "@types/node": "20.0.0",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "sass": "^1.58.3"
   }
 }

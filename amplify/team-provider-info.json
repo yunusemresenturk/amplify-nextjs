@@ -1,0 +1,52 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifynextjs-dev-21525-authRole",
+      "UnauthRoleArn": "arn:aws:iam::460191856511:role/amplify-amplifynextjs-dev-21525-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::460191856511:role/amplify-amplifynextjs-dev-21525-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifynextjs-dev-21525-deployment",
+      "UnauthRoleName": "amplify-amplifynextjs-dev-21525-unauthRole",
+      "StackName": "amplify-amplifynextjs-dev-21525",
+      "StackId": "arn:aws:cloudformation:us-east-1:460191856511:stack/amplify-amplifynextjs-dev-21525/61bf61d0-eebf-11ed-8159-125abffba7b5",
+      "AmplifyAppId": "d28togochtpj14",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-amplifynextjs-dev-21525-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "amplifyProjectManagement": {},
+        "userPoolGroups": {}
+      },
+      "function": {
+        "amplifyProjectManagementCreateAuthChallenge": {
+          "deploymentBucketName": "amplify-amplifynextjs-dev-21525-deployment",
+          "s3Key": "amplify-builds/amplifyProjectManagementCreateAuthChallenge-58702f68754d37612f6b-build.zip"
+        },
+        "amplifyProjectManagementCustomMessage": {
+          "REDIRECTURL": "localhost:3000",
+          "EMAILSUBJECT": "Verification Process Required for Account Activation",
+          "EMAILMESSAGE": "To complete the confirmation process, please click on the link below or copy and paste it into your browser:",
+          "deploymentBucketName": "amplify-amplifynextjs-dev-21525-deployment",
+          "s3Key": "amplify-builds/amplifyProjectManagementCustomMessage-47642b7375706d704a6d-build.zip"
+        },
+        "amplifyProjectManagementPostConfirmation": {
+          "GROUP": "user",
+          "deploymentBucketName": "amplify-amplifynextjs-dev-21525-deployment",
+          "s3Key": "amplify-builds/amplifyProjectManagementPostConfirmation-44596e4d703962763666-build.zip"
+        },
+        "amplifyProjectManagementPreTokenGeneration": {
+          "deploymentBucketName": "amplify-amplifynextjs-dev-21525-deployment",
+          "s3Key": "amplify-builds/amplifyProjectManagementPreTokenGeneration-614f556c6f4333752f7a-build.zip"
+        },
+        "AdminQueries32783e99": {
+          "deploymentBucketName": "amplify-amplifynextjs-dev-21525-deployment",
+          "s3Key": "amplify-builds/AdminQueries32783e99-695043786a69524e4655-build.zip"
+        }
+      },
+      "api": {
+        "AdminQueries": {},
+        "amplifynextjs": {}
+      }
+    }
+  }
+}
